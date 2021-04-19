@@ -5,6 +5,7 @@
 * {
     font-weight: bolder;
 }
+
 /* styling for title and body */
 html {
     font-family: "Open Sans", sans-serif;
@@ -45,7 +46,7 @@ nav a:hover {
     color: #0b550b;
     text-decoration: underline overline;
     font-size: xx-large;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 section .subsection {
@@ -53,12 +54,13 @@ section .subsection {
     font-weight: 900;
     font-size: x-large;
     background-color: rgb(124, 123, 123);
-    color:aliceblue;
+    color: aliceblue;
     margin: 20px 50ex 20px 50ex;
     padding: 5px 0 5px 0;
 }
 
-ul, ol{
+ul,
+ol {
     text-align: center;
     background: hsl(0, 1%, 83%);
     border: 2px solid rgb(4, 88, 16);
@@ -88,31 +90,65 @@ p[class~="summary"] {
     border-color: #b3d617;
 }
 
-section > figure {
+section>figure {
     display: inline;
     margin-left: 35%;
     margin-right: 35%;
 }
 
 /* paragraphs that are siblings to figrues*/
-figure ~ p {
+figure~p {
     text-align: center;
 }
 
 /* figcaption that come immediately after any image */
-img + figcaption {
+img+figcaption {
     text-align: center;
 }
 
 section.sound {
     display: block;
-    border-style:none;
+    border-style: none;
     margin: auto;
 }
 
 .sound {
     display: block;
-    border-style:none;
+    border-style: none;
     margin: auto;
     position: static;
+}
+
+.container {
+    display: flex;
+}
+
+a[href*="mailto:gmozhen@ucsd.edu"]:active {
+    background-color: coral;
+}
+
+@media screen and (min-width: 900px) {
+    #title {
+      margin: auto;
+    }
+}
+
+#submit {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 3;
+}
+
+form div {
+    display: grid;
+    grid-column-start: 2;
+    justify-self: start;
+}
+
+footer p {
+    text-align: center;
 }
