@@ -1,7 +1,11 @@
-/* styling for title and body */
-/* 3 relative lengths used: -em, rem, lh */
+/* 3 relative lengths used: -em, -rem, -ex */
 /* 3 absolute lenths used: -px, -in, -cm */
 
+/* universal selector */
+* {
+    font-weight: bolder;
+}
+/* styling for title and body */
 html {
     font-family: "Open Sans", sans-serif;
 }
@@ -11,7 +15,8 @@ h1 {
     text-shadow: 3px 3px 1px rgb(240, 236, 236);
     background-color: whitesmoke;
     margin: 20px auto;
-    width: 6in;
+    max-width: 6in;
+    min-width: 6in;
 }
 
 nav {
@@ -24,4 +29,90 @@ nav a {
     text-align: center;
     padding-left: 1em;
     font-size: large;
+}
+
+nav a:hover {
+    text-align: center;
+    padding-left: 1em;
+    font-size: larger;
+    background-color: rgb(142, 184, 143);
+}
+
+/* styling for journal entries */
+
+.date {
+    text-align: center;
+    color: #0b550b;
+    text-decoration: underline overline;
+    font-size: xx-large;
+    font-weight:bolder;
+}
+
+section .subsection {
+    text-align: center;
+    font-weight: 900;
+    font-size: x-large;
+    background-color: rgb(124, 123, 123);
+    color:aliceblue;
+    margin: 20px 50ex 20px 50ex;
+    padding: 5px 0 5px 0;
+}
+
+ul, ol{
+    text-align: center;
+    background: hsl(0, 1%, 83%);
+    border: 2px solid rgb(4, 88, 16);
+    padding: .5em;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
+
+li {
+    display: block;
+}
+
+p[class~="summary"] {
+    text-align: center;
+    margin: auto;
+    width: 5in;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    border-radius: 2ch;
+    border-width: 20px;
+    border-style: dotted;
+    border-color: #b3d617;
+}
+
+section > figure {
+    display: inline;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/* paragraphs that are siblings to figrues*/
+figure ~ p {
+    text-align: center;
+}
+
+/* figcaption that come immediately after any image */
+img + figcaption {
+    text-align: center;
+}
+
+section.sound {
+    display: block;
+    border-style:none;
+    margin: auto;
+}
+
+.sound {
+    display: block;
+    border-style:none;
+    margin: auto;
+    position: static;
 }
