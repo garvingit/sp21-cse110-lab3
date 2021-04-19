@@ -1,0 +1,27 @@
+/* styling for title and body */
+/* 3 relative lengths used: -em, rem, lh */
+/* 3 absolute lenths used: -px, -in, -cm */
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px 1px rgb(240, 236, 236);
+    background-color: whitesmoke;
+    margin: 20px auto;
+    width: 6in;
+}
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1cm;
+}
+
+nav a {
+    text-align: center;
+    padding-left: 1em;
+    font-size: large;
+}
